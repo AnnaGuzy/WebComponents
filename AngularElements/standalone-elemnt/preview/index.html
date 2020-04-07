@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <app-simple
+      title="Batman"
+      details="Director: Christopher Nolan, Year: 2008"
+    ></app-simple>
+    <script src="./standaloneelemnt.js"></script>
+    <script>
+      const component = document.querySelector('app-simple');
+      const onDisplay = function (event){
+        alert(event.detail);
+      };
+      component.addEventListener('display', (e) => {alert(e.detail)});
+    </script>
+  </body>
+</html>
