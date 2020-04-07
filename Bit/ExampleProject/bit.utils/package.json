@@ -10,7 +10,9 @@
     "mockery": "^2.1.0"
   },
   "bit": {
-    "env": {},
+    "env": {
+      "compiler": "bit.envs/compilers/flow@7.0.3"
+    },
     "componentsDefaultDirectory": "components/{name}",
     "packageManager": "npm"
   }
