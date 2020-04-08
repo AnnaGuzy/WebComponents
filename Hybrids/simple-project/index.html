@@ -16,6 +16,10 @@
     <simple-element
         title = "Batman"
         details="Director: Christopher Nolan, Year: 2008"
-    ></simple-element>   
+    ></simple-element>  
+    <script>
+      const myElement = document.querySelector('simple-element');
+        myElement.addEventListener('button-pressed', (e) => {alert(e.detail)});
+    </script> 
   </body>
 </html>

@@ -1,7 +1,7 @@
-import { html, define } from 'hybrids';
+import { html, define, dispatch } from 'hybrids';
 
 export function onclick(host) {
-  alert(host.details);
+  dispatch(host, "button-pressed", { detail: host.details });
 }
 
 export const SimpleElement = {
